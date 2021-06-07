@@ -30,7 +30,17 @@
     line-height: 1.171;
   }
 }
+.textfirst {
+  display: block;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+}
 .footer-link:hover,
 .footer:focus {
   color: #ff6b08;
