@@ -103,10 +103,5 @@ function onPaginationClick(event) {
 
     gallery.innerHTML = '';
 
-    if (inputRef.value !== '') {
-      movieSearcher(inputRef.value, currentPage);
-    } else {
-      startPage();
     }
-  }
 }
