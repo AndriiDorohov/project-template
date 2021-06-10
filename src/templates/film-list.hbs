@@ -1,17 +1,14 @@
 {{#each this}}
-<li class="movies-item">
-  <div class="movies-poster">
-    <img class="movies-image" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/{{poster_path}}" alt="{{title}}"
-      data-id="{{id}}" />
-  </div>
+<div class='film-card' id='{{id}}'>
+  <img src='https://image.tmdb.org/t/p/w500/{{poster_path}}' alt='{{title}}' />
 
-  <div class="description">
-    <h2 class="description-title">{{title}}</h2>
-    <p class="description-container">
-      <span class="description-info">{{#each genre_ids}}{{this}}{{#unless @last}},{{/unless}} {{/each}} |
-        {{release_date}}</span>
-      <span class="description-popularity">{{vote_average}}</span>
-    </p>
+  <div class='description'>
+    <span class='description-item'>
+      {{title}}
+    </span>
+    <span class='description-item'>
+      #
+    </span>
   </div>
-</li>
+</div>
 {{/each}}
